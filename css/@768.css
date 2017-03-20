@@ -1,0 +1,27 @@
+@media screen and (min-width: 767px) and (max-width: 980px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    .nav_item {
+        margin-left: 10px;
+    }
+    div#slider {
+        top: 120px;
+        height: 280px;
+    }
+    .news {
+        margin: 20px auto;
+    }
+    .footer > span{
+        text-align: center;
+        
+    }
+    .page-content {
+        padding: 10vw;
+    }
+}

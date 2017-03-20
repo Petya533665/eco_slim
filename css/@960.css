@@ -1,0 +1,26 @@
+@media screen and (min-width: 960px) and (max-width: 1300px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    div#slider {
+        top: 130px;
+        height: 350px;
+    }
+    .wrapper {
+        
+        flex-direction: row;
+        
+    }
+    .page-content {
+        padding: 10vw 5vw;
+    }
+    .footer{
+        padding: 50px 0;
+        background-color: white;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 1301px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    div#slider {
+        top: 130px;
+        height: 350px;
+    }
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact{
+        margin: 0;
+    }
+    .about{
+        margin: 0;
+    }
+    .page-content {
+        padding: 10vw;
+    }
+    .footer {
+        padding: 50px 10vw;
+        
+        background-color: white;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,309 @@
+.page {
+    padding-top: 3px;
+    background: #007c24;
+}
+/*-----------------header-----------------*/
+.warpper-header {
+    /*border-top: 10px solid rgba(10, 10, 10, 0.1);
+    border-bottom: 10px solid rgba(10, 10, 10, 0.1);*/
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    background-image: url(../img/header.png);
+    /*margin-bottom: 12px;*/
+}
+.header {
+    padding-top: 30px;
+    width: 80vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+}
+/*--------navigation---------*/
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav_item {
+    margin-left: 40px;
+}
+.nav_item>a:hover {
+    color: black;
+    text-shadow: 3px 2px 3px rgba(70, 70, 70, 1);
+}
+.nav_item > a {
+    text-decoration: none;
+    color: #007c24;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+/*------slider---------*/
+div#slider {
+    position: absolute;
+    top: 240px;
+    left: 9.5vw;
+    width: 80vw;
+    height: 180px;
+    background-image: url(../img/bg_slide.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+div#slider > figure > img {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+div#slider > figure {
+    position: relative;
+    width: 500%;
+    border: 0;
+    height: 100%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+/*-------------------content-------------------*/
+.page-content {
+    margin-top: 12px;
+  /*  border-top: 10px solid rgba(10, 10, 10, 0.1);*/
+    background-color: white;
+    padding: 135px 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10vw 0;
+    text-align: center;
+}
+/*-------button-------*/
+.btn {
+    display: block;
+    margin-bottom: 50px;
+    margin: 50px auto;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 259px;
+    height: 53px;
+    border-radius: 135px;
+    background-image: url(../img/btn.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height: 50px;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+}
+/*----------content--------*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.news {
+    position: relative;
+    margin: 0;
+    width: 300px;
+    text-align: left;
+}
+.news > article > a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #007c24;
+    text-decoration: none;
+}
+figure {
+    margin: 0;
+    display: block;
+    width: 275px;
+    height: 131px;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+    border-radius: 5px;
+}
+/*------------------footer-----------------------*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 10vw 0;
+    min-height: 412px;
+    background-color: #3b3b3b;
+    background-image: url(../img/bg_footer.png);
+    background-size: cover;
+    color: white;
+}
+.news.about{
+    background-position: 0 -70px;
+}
+.footer > span{
+    position: absolute;
+    bottom: 5px;
+    right: 10vw;
+}
+/*-------contact--------*/
+.contact {
+    width: 310px;
+}
+
+.coments {
+    margin-bottom: 20px;
+}
+
+.coments > img {
+    float: left;
+    margin-right: 10px;
+}
+
+.coments >i {
+    color: #a1a1a1;
+}
+
+.coments > span {
+    font-weight: 700;
+}
+/*-----service-----*/
+.service {
+    width: 310px;
+}
+aside > span {
+    font-style: italic;
+    color: #a1a1a1;
+}
+aside > a {
+    color: #e65555;
+    text-decoration: none;
+}
+/*---------about-------*/
+.about {
+    width: 310px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    padding-top: 55px;
+}
+/*------------Animation---------------*/
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/*------------adaptive-----------*/
+@media screen and (min-width: 767px) and (max-width: 980px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    .nav_item {
+        margin-left: 10px;
+    }
+    div#slider {
+        top: 120px;
+        height: 280px;
+    }
+    .news {
+        margin: 20px auto;
+    }
+    .footer > span{
+        text-align: center;
+        
+    }
+    .page-content {
+        padding: 10vw;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1300px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    div#slider {
+        top: 130px;
+        height: 350px;
+    }
+    .wrapper {
+        
+        flex-direction: row;
+        
+    }
+    .page-content {
+        padding: 10vw 5vw;
+    }
+    .footer{
+        padding: 50px 0;
+        background-color: white;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1301px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    div#slider {
+        top: 130px;
+        height: 400px;
+    }
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact{
+        margin: 0;
+    }
+    .about{
+        margin: 0;
+    }
+    .page-content {
+        padding: 10vw;
+    }
+    .footer {
+        padding: 50px 10vw;
+        
+        background-color: white;
+        flex-direction: row;
+    }
+}

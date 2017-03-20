@@ -1,0 +1,247 @@
+.page {
+    padding-top: 12px;
+    background: #3b3b3b;
+}
+
+/*-----------------header-----------------*/
+
+.header {
+    padding-top: 30px;
+    width: 80vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.warpper-header {
+    border-top: 10px solid rgba(10, 10, 10, 0.1);
+    border-bottom: 10px solid rgba(10, 10, 10, 0.1);
+    position: relative;
+    flex-direction: column;
+    background-color: #da4e4e;
+    margin-bottom: 12px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_item {
+    
+    margin-left: 40px;
+}
+
+.nav_item>a:hover {
+    color: black;
+    text-shadow: 3px 2px 3px rgba(70, 70, 70, 1);
+}
+
+.nav_item > a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+div#slider {
+    position: absolute;
+    top: 240px;
+    left: 9.5vw;
+    width: 80vw;
+    height: 180px;
+    background-image: url(../img/bg_slide.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure p {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 600%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+
+/*-------------------content-------------------*/
+
+.page-content {
+    margin-top: 12px;
+    border-top: 10px solid rgba(10, 10, 10, 0.1);
+    background-color: white;
+    padding: 135px 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10vw 0;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin-bottom: 50px;
+    margin: 50px auto;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 259px;
+    height: 53px;
+    border-radius: 32px;
+    background-image: url(../img/btn.png);
+    background-repeat: no-repeat;
+    line-height: 50px;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.news {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    text-align: left;
+}
+.news > article > a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #e65555;
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+    display: block;
+    width: 275px;
+    height: 131px;
+    border: 10px solid rgba(10, 10, 10, 0.1);
+    border-radius: 5px;
+}
+
+
+/*------------------footer-----------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 10vw 0;
+    min-height: 412px;
+    background-color: #3b3b3b;
+    background-image: url(../img/bg_footer.png);
+    background-size: cover;
+    color: white;
+}
+.footer > span{
+    position: absolute;
+    bottom: 5px;
+    right: 10vw;
+}
+/*-------contact--------*/
+.contact {
+    width: 310px;
+}
+
+.coments {
+    margin-bottom: 20px;
+}
+
+.coments > img {
+    float: left;
+    margin-right: 10px;
+}
+
+.coments >i {
+    color: #a1a1a1;
+}
+
+.coments > span {
+    font-weight: 700;
+}
+
+
+/*-----service-----*/
+
+.service {
+    width: 310px;
+}
+
+aside > span {
+    font-style: italic;
+    color: #a1a1a1;
+}
+
+aside > a {
+    color: #e65555;
+    text-decoration: none;
+}
+
+.about {
+    width: 310px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    padding-top: 55px;
+}
+
+
+/*------------Animation---------------*/
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
